@@ -1,0 +1,15 @@
+# unknown subcommand is a usage error
+! exec qurl nope
+stderr '^qurl: unknown command "nope" for "qurl"$'
+stderr 'Run ''qurl --help'' for usage\.'
+! stdout .
+
+# unknown flag is a usage error
+! exec qurl --nope
+stderr '^qurl: unknown flag: --nope$'
+! stdout .
+
+# version takes no arguments
+! exec qurl version extra
+stderr '^qurl: unknown command "extra" for "qurl version"$'
+! stdout .

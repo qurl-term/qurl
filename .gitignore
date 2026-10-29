@@ -29,15 +29,8 @@ go.work.sum
 .env
 
 # Editor/IDE
- .idea/
- .vscode/
-/.idea/.gitignore
-/.idea/misc.xml
-/.idea/modules.xml
-/.idea/qurl.iml
-/.idea/vcs.xml
-
-
+/.idea/
+.vscode/
 
 # qURL
 /bin/
@@ -45,3 +38,6 @@ go.work.sum
 coverage.*
 .DS_Store
 *.log
+.docs/
+AGENTS.md
+.github/copilot-instructions.md

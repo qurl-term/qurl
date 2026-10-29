@@ -1,0 +1,10 @@
+# version subcommand prints exactly one line to stdout
+exec qurl version
+stdout -count=1 '^qurl '
+stdout '^qurl \S+.* go1\.\d+\S* \w+/\w+$'
+! stderr .
+
+# --version prints the same line
+exec qurl --version
+stdout -count=1 '^qurl \S+.* go1\.\d+\S* \w+/\w+$'
+! stderr .
