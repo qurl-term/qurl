@@ -1,0 +1,11 @@
+# no arguments prints help until the TUI exists
+exec qurl
+stdout 'Usage:'
+stdout '^  version\s+Print version information$'
+! stderr .
+
+# --help prints the same help
+exec qurl --help
+stdout 'Usage:'
+stdout '--version\s+print version information and exit'
+! stderr .
