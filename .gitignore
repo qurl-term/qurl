@@ -29,5 +29,19 @@ go.work.sum
 .env
 
 # Editor/IDE
-# .idea/
-# .vscode/
+ .idea/
+ .vscode/
+/.idea/.gitignore
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/qurl.iml
+/.idea/vcs.xml
+
+
+
+# qURL
+/bin/
+/dist/
+coverage.*
+.DS_Store
+*.log
